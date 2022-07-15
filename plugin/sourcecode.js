@@ -8,8 +8,8 @@ let handler = async (m, { conn }) => {
     let txt = `
 Bot ini menggunakan script github
 
-Mau scriptnya chat owner wa.me/6285850539404
-Script original By Family-MD
+Mau scriptnya chat owner wa.me/6285794152433
+Script original By Hendra-Md
 `
      conn.reply(m.chat, txt, m)
 }
