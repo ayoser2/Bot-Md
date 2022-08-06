@@ -41,7 +41,7 @@ global.urlnya = "https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ"
 
 //============= callButtons =============//
 global.dtc = '𝒄𝒂𝒍𝒍 𝒐𝒘𝒏𝒆𝒓'
-global.phn = '+62 858-5053-94047'
+global.phn = '+7 960 905-57-04'
 
 //============= Games ================//
 global.benar = '_*Benar*_'
