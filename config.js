@@ -31,17 +31,17 @@ global.APIKeys = { // APIKey Here
   'https://api.adiofficial.xyz': 'apikey lu'
 }
 
-//global.wm = '𝑴𝒚𝑩𝒐𝒕-𝑴𝒖𝒍𝒕𝒊 𝑫𝒆𝒗𝒊𝒄𝒆'
-global.wait = '_*𝒔𝒆𝒅𝒂𝒏𝒈 𝒅𝒊 𝒑𝒓𝒐𝒔𝒆𝒔...*_'
-global.eror = '_*𝒎𝒂𝒂𝒇 𝒔𝒆𝒓𝒗𝒆𝒓 𝒆𝒓𝒓𝒐𝒓...*_'
+//global.wm = '𝑮𝒂𝒓𝒇𝒊𝒆𝒍𝒅 𝑩𝒐𝒕-𝑴𝒖𝒍𝒕𝒊 𝑫𝒆𝒗𝒊𝒄𝒆'
+global.wait = '_*𝑝𝑙𝑒𝑎𝑠𝑒 𝑤𝑎𝑖𝑡...*_'
+global.eror = '_*𝑠𝑒𝑟𝑣𝑒𝑟 𝑒𝑟𝑟𝑜𝑟...*_'
 
 //========Url Template Buttons=========//
-global.dtu = '𝑌𝑜𝑢𝑡𝑢𝑏𝑒'
-global.urlnya = "https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ"
+global.dtu = '𝗯𝗼𝘁 𝗴𝗿𝗼𝘂𝗽'
+global.urlnya = "𝑠𝑡𝑖𝑙𝑙 𝑚𝑎𝑘𝑖𝑛𝑔"
 
 //============= callButtons =============//
-global.dtc = '𝒄𝒂𝒍𝒍 𝒐𝒘𝒏𝒆𝒓'
-global.phn = '+7 960 905-57-04'
+global.dtc = '𝗼𝘄𝗻𝗲𝗿'
+global.phn = '+94 76 867 8590'
 
 //============= Games ================//
 global.benar = '_*Benar*_'
