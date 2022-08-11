@@ -5,32 +5,10 @@
 **/
 
 let handler = async (m, { conn, usedPrefix }) => {
-    let tqto = `*BIG THANKS TO*
+    let tqto = `*THANKS TO*
 
-Nurutomo: 
-https://github.com/Nurutomo
-Istikmal: 
-https://github.com/BochilGaming
-Ariffb: 
-https://github.com/Ariffb25
-Aguz Familia:
-https://github.com/FokusDotId
-Amelia Lisa:
-https://github.com/Ameliascrf
-Aniq12
-https://github.com/aniq12
-Ilman: 
-https://github.com/ilmanhdyt
-Amirul: 
-https://github.com/amiruldev20
-Irwan:
-https://github.com/irwanx
-Rasel:
-https://github.com/raselcomel
-Mursid:
-https://github.com/Botwa021
-Jarot:
-https://github.com/Alpiii22
+*Me &*
+*My friends*
 
 \`\`\`${conn.user.name}\`\`\`
 `
