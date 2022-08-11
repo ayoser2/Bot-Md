@@ -5,21 +5,21 @@ let handler = async (m, { conn, text }) => {
   let teks = results.all.map(v => {
     switch (v.type) {
       case 'video': return `
-*Judul:* ${v.title} 
-*Link:* (${v.url})
-*Duration:* ${v.timestamp}
-*Uploaded:* ${v.ago}
-*Viewer:* ${v.views} 
+*Title📄:* ${v.title} 
+*Link🔖:* (${v.url})
+*Duration⌚:* ${v.timestamp}
+*Uploaded📅:* ${v.ago}
+*Viewer👀:* ${v.views} 
  `.trim()
       case 'channel': return `
-*Chanel:* ${v.name} 
-*Link:* (${v.url})
-*Subscriber:* ${v.subCountLabel} (${v.subCount})
-*Total Video:* ${v.videoCount} video
+*Chanel💌:* ${v.name} 
+*Link🔖:* (${v.url})
+*Subscriber📄:* ${v.subCountLabel} (${v.subCount})
+*Total Video🧐:* ${v.videoCount} video
 `.trim()
     }
   }).filter(v => v).join('\n\n*=========================*\n\n')
- conn.reply(m.chat, '*───「 Youtube Search 」───*\n\n' + teks, m)
+ conn.reply(m.chat, '*───「 💜Youtube Search💜 」───*\n\n' + teks, m)
 }
 handler.help = ['ytsearch <query>']
 handler.tags = ['tools', 'internet']
