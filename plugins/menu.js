@@ -6,36 +6,36 @@ let moment = require('moment-timezone')
 const defaultMenu = {
   before: `
 ┏─────────────────⬣
-┆   *Hai*, %name 
+┆   *Hi*, %name 
 ┗┬──────────────┈ ⳹
-┏┆⬡ *Tersisa* : %limit Limit
+┏┆⬡ *Limit* : %limit Limit
 ┆┆⬡ *Role* : %role
 ┆┆⬡ *Level* : %level [%exp / %maxexp]
 ┆┆⬡ *Exp* : %totalexp XP
 ┗┬──────────────┈ ⳹
-┏┤   *Kalender*
+┏┤   *Calender*
 ┆┗──────────────┈ ⳹
-┆⬡ *Hari* : %week %weton
-┆⬡ *Tanggal* : %week %weton, %date
-┆⬡ *Tanggal Islam* : %dateIslamic
-┆⬡ *Waktu* : %time
+┆⬡ *Date* : %week %weton
+┆⬡ *Date 2* : %week %weton, %date
+┆⬡ *Date Islam* : %dateIslamic
+┆⬡ *Time* : %time
 ┗┬──────────────┈ ⳹
 ┏┤   *Bot info*
 ┆┗──────────────┈ ⳹
 ┆⬡ *Uptime* : %uptime
-┆⬡ *Run Bot* : Panel/RDP
-┆⬡ *Bailyes Version* : 4.2.0
+┆⬡ *Run Bot* : Termux
+┆⬡ *Bailyes Version* : 6.0.2 V
 ┆⬡ *Database* : %rtotalreg dari %totalreg
 ┆⬡ *Memory Used* : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-┆⬡ *Instagram* :
-┆⬡ https://instagram.com/oscarbotz_
+┆⬡ *Instagram* : 🤭
+┆⬡ *github* : 💕
 ┗─────────────────⬣
 %readmore`.trim(),
   header: '┏━┈┈『 %category 』┈┈⬣',
   body: '┆⬡ %cmd %islimit %isPremium',
   footer: '┗━───────⬣\n',
   after: `
-*%𝗗𝗮𝗿𝗸 𝗢𝗳𝗳𝗰@^%version*
+*%𝗚𝗮𝗿𝗳𝗶𝗲𝗹𝗱@^%version*
 ${'```%npmdesc```'}
 `,
 }
@@ -123,7 +123,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'audio') tags = {
     'audio': 'Pengubah Suara'
   }
-  if (teks == 'jadibot') tags = {
+  if (teks == 'bot') tags = {
     'jadibot': 'Jadi Bot'
   }
   if (teks == 'info') tags = {
@@ -197,7 +197,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       let judul = `${global.ucapan}, ${name}`.trim()
       const sections = [
       {
-        title: '𝐥𝐢𝐬𝐭 𝐦𝐞𝐧𝐮 𝗗𝗮𝗿𝗸 𝐛𝐨𝐭',
+        title: '𝐥𝐢𝐬𝐭 𝐦𝐞𝐧𝐮',
         rows: [
           { title: 'Allmenu', rowId: `${_p}? all` },
           { title: 'infoalpi', rowId: `${_p}? infoalpi` },
@@ -286,9 +286,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send3TemplateButtonImg(m.chat, fla + teks, text.trim(), wm, `𝑷𝒆𝒎𝒊𝒍𝒊𝒌 𝑩𝒐𝒕`, `${_p}owner`, `𝑻𝒉𝒂𝒏𝒌𝒔 𝑻𝒐𝒐`, `${_p}tqto`, `𝑫𝒐𝒏𝒂𝒔𝒊`, `${_p}donasi`)
+    await conn.send3TemplateButtonImg(m.chat, fla + teks, text.trim(), wm, `𝑮𝒂𝒓𝒇𝒊𝒆𝒍𝒅 𝑴𝑫 𝑩𝒐𝒕`, `${_p}owner`, `𝑻𝒉𝒂𝒏𝒌𝒔 𝑻𝒐𝒐`, `${_p}tqto`, `𝑫𝒐𝒏𝒂𝒔𝒊`, `${_p}donasi`)
   } catch (e) {
-    conn.reply(m.chat, '𝑴𝒂𝒂𝒇, 𝒎𝒆𝒏𝒖 𝒔𝒆𝒅𝒂𝒏𝒈 𝒆𝒓𝒓𝒐𝒓', m)
+    conn.reply(m.chat, '𝒎𝒆𝒏𝒖 𝒔𝒆𝒅𝒂𝒏𝒈 𝒆𝒓𝒓𝒐𝒓', m)
     throw e
   }
 }
@@ -322,16 +322,16 @@ function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
   res = "Selamat dinihari"
   if (time >= 4) {
-    res = "Selamat pagi"
+    res = "Good morning 🌄"
   }
   if (time > 10) {
-    res = "Selamat siang"
+    res = "Good Afternoon 🏖️"
   }
   if (time >= 15) {
-    res = "Selamat sore"
+    res = "Good Evening 🌅"
   }
   if (time >= 18) {
-    res = "Selamat malam"
+    res = "Good Night 🌃"
   }
   return res
 }
